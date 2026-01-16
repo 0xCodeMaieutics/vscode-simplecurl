@@ -14,6 +14,12 @@ export function activate(context: vscode.ExtensionContext) {
     commands.clearFolder
   );
   context.subscriptions.push(disposable2);
+
+  const disposable3 = vscode.commands.registerCommand(
+    `${PROJECT_NAME}.fetchWithBearerToken`,
+    commands.fetchWithBearerToken
+  );
+  context.subscriptions.push(disposable3);
 }
 
 export function deactivate() {}

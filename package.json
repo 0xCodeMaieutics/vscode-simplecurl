@@ -12,6 +12,7 @@
   "activationEvents": [
     "simplecurl.jsonFetch",
     "simplecurl.clearFolder",
+    "simplecurl.fetchWithBearerToken",
     "onStartupFinished"
   ],
   "main": "./out/extension.js",
@@ -24,6 +25,10 @@
       {
         "command": "simplecurl.clearFolder",
         "title": "Simple CURL: Clear Folder"
+      },
+      {
+        "command": "simplecurl.fetchWithBearerToken",
+        "title": "Simple CURL: Fetch With Bearer Token"
       }
     ]
   },
